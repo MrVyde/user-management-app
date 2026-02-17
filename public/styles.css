@@ -1,0 +1,48 @@
+body {
+  color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* this creates space between all children */
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+input,
+textarea {
+  padding: 8px;
+}
+
+button {
+    width: 200px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between title and search */
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px; /* space between input and button */
+}
+
+.search-form input[type="text"] {
+  padding: 5px 8px;
+  font-size: 1rem;
+}
+
+.search-form button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}

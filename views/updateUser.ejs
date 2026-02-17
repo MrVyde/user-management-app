@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+<body>
+  <h1><%= title %></h1>
+  <%- include("partials/errors.ejs") %>
+  <form action="/<%= user.id %>/update" method="POST">
+        <div class="form">
+            <label for="firstName">First Name:</label>
+            <input 
+            type="text" 
+            id="firstName"
+            name="firstName" 
+            value="<%= user.firstName %>" 
+            required>
+        </div>
+
+        <div class="form">
+            <label for="lastName">Last Name:</label>
+            <input 
+            type="text" 
+            id="lastName"
+            name="lastName" 
+            value="<%= user.lastName %>" 
+            required>
+        </div>
+
+        <div class="form">
+            <label for="email">Email:</label>
+            <input 
+            type="email" 
+            id="email"
+            name="email" 
+            value="<%= user.email %>" 
+            required>
+        </div>
+
+        <div class="form">
+            <label for="age">Age:</label>
+            <input 
+            type="number" 
+            id="age"
+            name="age" 
+            min="18" 
+            max="120"
+            value="<%= user.age || '' %>">
+        </div>
+
+        <div class="form">
+            <label for="bio">Bio:</label>
+            <textarea 
+            id="bio"
+            name="bio" 
+            maxlength="200"
+            rows="4"><%= user.bio || '' %></textarea>
+        </div>
+
+        <button type="submit">Update User</button>
+    </form>
+
+  <a href="/">Back to home</a>
+</body>
+</html>
