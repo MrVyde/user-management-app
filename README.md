@@ -12,7 +12,7 @@ The app is deployed on Render (Free Tier):
 
 ## Features Implemented
 
-### 1. User CRUD
+### 1. Uses CRUD
 - **Create**: Add new users with first name, last name, email, age, and bio.
 - **Read**: View a list of all users.
 - **Update**: Edit existing user details.
