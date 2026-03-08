@@ -8,7 +8,7 @@ It simulates database operations using an in-memory storage class.
 ## Live Demo
 The app is deployed on Render (Free Tier):
 
-👉 [Mini Message Board on Render](https://user-management-app-bvvh.onrender.com)
+[Mini Message Board on Render](https://user-management-app-bvvh.onrender.com)
 
 ## Features Implemented
 
